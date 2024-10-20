@@ -2,6 +2,7 @@
   "name": "react.dev",
   "version": "0.0.0",
   "main": "/src/index.js",
+  "homepage": "https://galex0.github.io",
   "dependencies": {
     "express": "^4.21.1",
     "react": "^18.0.0",
