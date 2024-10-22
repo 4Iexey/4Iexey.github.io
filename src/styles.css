@@ -83,8 +83,14 @@
   .game {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 20rem;
   }
   
   .game-info {
     margin-left: 20px;
+  }
+
+  .game-info ol {
+    list-style-type: none;
   }
