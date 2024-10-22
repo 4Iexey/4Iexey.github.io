@@ -12,6 +12,7 @@ export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState("X");
   const [turn, setTurn] = useState(1);
+  const [history, setHistory] = useState([Array(9).fill(null)]);
 
   const winner = calculateWinner(squares);
   let status;
@@ -30,6 +31,7 @@ export default function Board() {
     setTurn(turn + 1);
     const nextSquares = squares.slice();
     nextSquares[i] = xIsNext;
+    setHistory([...history, nextSquares]);
     setSquares(nextSquares); 
     setXIsNext(xIsNext === "X" ? "O" : "X");      
   }
