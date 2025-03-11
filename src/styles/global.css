@@ -1,7 +1,11 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  margin: 1em;
-  margin-top: 0;
-  color: #6c7e50;
+  margin: 0;
+  color: #657756;
   background-color: #455e36;
   font-family: sans-serif;
   font-weight: 400;
@@ -9,8 +13,50 @@ body {
   font-size: 20px;
 }
 
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 1em;
+  margin-top: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(8px);
+}
+
 h1 {
   font-size: 50px;
-  color: #657756;
   margin-top: 0;
+}
+
+p {
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #657756;
+}
+
+p:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1em;
 }

@@ -1,9 +1,11 @@
 import TicTacToe from "../components/TicTacToe";
 
-export default function Project() {
+function Project() {
   return (
     <>
       <TicTacToe />
     </>
   );
 }
+
+export default Project;

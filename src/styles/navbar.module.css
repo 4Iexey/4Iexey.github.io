@@ -1,15 +1,15 @@
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.3em;
-  padding-top: 0.3em;
   border-bottom: 1px solid #44532e;
   margin-bottom: 1em;
+  margin-top: 0.3em;
 }
 
 .nav ul {
-  list-style: none;
+  list-style: none; 
   padding: 0;
   margin: 0;
   display: flex;
@@ -30,6 +30,11 @@
   .nav li:last-child {
     border-bottom: none;
   }
+
+  .nav img {
+    position: absolute;
+    bottom: 0.3em;
+  }
 }
 
 .nav li {
@@ -48,5 +53,4 @@
 }
 
 .nav img {
-  
 }

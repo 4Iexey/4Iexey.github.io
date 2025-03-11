@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "homepage": "https://4Iexey.github.io",
   "dependencies": {
-    "express": "^4.21.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "@react-three/drei": "^10.0.3",
+    "@react-three/fiber": "^9.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"

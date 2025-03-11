@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/navbar.module.css";
 
-export default function Navbar() {
+function Navbar() {
   return (
     <nav className={styles.nav}>
-      <img src="/house4.png" alt="house on chicken legs" />
+      <Link to="/">
+        <img src="/house2.png" alt="house on chicken legs" />
+      </Link>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/projects">Projects</Link></li>
@@ -15,3 +17,5 @@ export default function Navbar() {
     </nav>
   );      
 }
+
+export default Navbar;
